@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 {% load staticfiles %} <!-- New line -->
-
 <html>
 
 	<head>
@@ -11,6 +10,18 @@
 	<body>
 		<div>
 			<a href="/rango/">Home</a><br />
+			<br />
+			<strong>{{ boldmessage }}</strong><br />
+		</div>
+		<div>
+			<img src="{% static 'images/carl.jpg' %}" 
+				 alt="Picture of Carl" /> <!-- New line -->
+		</div>
+		</br>
+		This tutorial has been put together by Ewan Kilgour-Spence
+		<div>
+			<img src="{{MEDIA_URL}}cat.jpg" 
+				 alt="Picture of a Cat" > <!-- New line -->
 		</div>
 	</body>
 
