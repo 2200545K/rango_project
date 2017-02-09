@@ -21,6 +21,9 @@
 	{% endif %}
 	</div>
 	</br>
-	<div><a href="/rango/">Home</a><br /></div>
+	{% if category %}
+			<a href="/rango/category/{{category.slug}}/add_page/">Add Page</a> <br/>
+    {% endif %}
+	<div><a href="/rango/">Index</a><br /></div>
 </body>
 </html>
